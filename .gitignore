@@ -1,0 +1,84 @@
+# ========== Unity Default ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+sysinfo.txt
+
+# ========== VS / JetBrains ==========
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.user
+*.userprefs
+*.suo
+*.tmp
+*.booproj
+*.pidb
+*.svd
+*.pdb
+*.code-workspace
+.vs/
+
+# ========== OS Specific ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== Unity Cloud Build ==========
+.cloud/
+
+# ========== Addressables ==========
+Assets/AddressableAssetsData/**/*.bin*
+Assets/AddressableAssetsData/**/*.link*
+Assets/AddressableAssetsData/**/*.entry*
+
+# ========== Build Artifacts ==========
+Build/
+Builds/
+ExportedProject/
+*.apk
+*.exe
+*.aab
+*.unitypackage
+*.zip
+*.zip.meta
+*.tar
+*.webm
+*.mp4
+
+# ========== Point Cloud (raw) ==========
+*.ply
+*.bin
+*.ply.meta
+*.bin.meta
+
+# ========== Scene Demo/Test ==========
+demo/
+Demo/
+DemoBuild/
+Assets/**/Demo/
+Assets/**/demo/
+Assets/**/Build/
+Assets/**/Builds/
+
+# ========== Logs / Backup ==========
+*.bak
+*.orig
+*.log
+
+# ========== Node.js (if used) ==========
+node_modules/
+npm-debug.log
+
+# ========== Secrets ==========
+*.key
+*.pem
+*.cert
+*.env

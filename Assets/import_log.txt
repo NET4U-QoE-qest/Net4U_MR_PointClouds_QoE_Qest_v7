@@ -1,0 +1,4 @@
+[SKIPPED] Source folder not found: C:\Users\renac\Desktop\cose nuove\Marzo\MixedReality\MR-Subjective-Testing-Platform-main\MR-Subjective-Testing-Platform-main\Managers
+[SKIPPED] Source folder not found: C:\Users\renac\Desktop\cose nuove\Marzo\MixedReality\MR-Subjective-Testing-Platform-main\MR-Subjective-Testing-Platform-main\Utils
+[SKIPPED] Source folder not found: C:\Users\renac\Desktop\cose nuove\Marzo\MixedReality\MR-Subjective-Testing-Platform-main\MR-Subjective-Testing-Platform-main\Scripts
+[SKIPPED] Source folder not found: C:\Users\renac\Desktop\cose nuove\Marzo\MixedReality\MR-Subjective-Testing-Platform-main\MR-Subjective-Testing-Platform-main\Resources
