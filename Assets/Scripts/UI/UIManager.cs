@@ -126,18 +126,18 @@ public class UIManager : MonoBehaviour
 
     public void OnPlay()
     {
-        string fixedName = "BlueSpin_UVG_vox10_25_0_250"; // Nome della cartella principale
-        string fixedQuality = "1"; // Qualità fissa q1
+        //string fixedName = "BlueSpin_UVG_vox10_25_0_250"; // Nome della cartella principale
+        //string fixedQuality = "1"; // Qualità fissa q1
 
-        Debug.Log($"▶ PLAY fissa | {fixedName} - q{fixedQuality}");
+        //Debug.Log($"▶ PLAY fissa | {fixedName} - q{fixedQuality}");
 
-        currentPC = PointCloudsLoader.Instance.Spawn(fixedName, fixedQuality);
-
-        if (currentPC != null)
-        {
-            currentPC.SetIsMesh(meshToggle.isOn); // puoi disattivare anche questo se vuoi sempre point cloud
-            currentPC.SetAnimate(true);
-        }
+        //currentPC = PointCloudsLoader.Instance.Spawn(fixedName, fixedQuality);
+        
+        //if (currentPC != null)
+       // {
+       //     currentPC.SetIsMesh(meshToggle.isOn); // puoi disattivare anche questo se vuoi sempre point cloud
+        //    currentPC.SetAnimate(true);
+        //}
     }
 
 
