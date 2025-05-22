@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283110561029435272, guid: 6c3456b6543cd1d4296c0e34d38c6502, type: 3}
       propertyPath: m_Options.m_Options.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6283110561029435272, guid: 6c3456b6543cd1d4296c0e34d38c6502, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
@@ -829,11 +829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283110561029435272, guid: 6c3456b6543cd1d4296c0e34d38c6502, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: 1.5m
+      value: 2m
       objectReference: {fileID: 0}
     - target: {fileID: 6283110561029435272, guid: 6c3456b6543cd1d4296c0e34d38c6502, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: 2m
+      value: 3m
       objectReference: {fileID: 0}
     - target: {fileID: 6283110561029435272, guid: 6c3456b6543cd1d4296c0e34d38c6502, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
@@ -10699,6 +10699,18 @@ PrefabInstance:
       value: '
 
         Align with the view'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199508834110206841, guid: 8a3826b29567e6044a95e79d38cce36c, type: 3}
+      propertyPath: m_margin.w
+      value: -3.0916023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199508834110206841, guid: 8a3826b29567e6044a95e79d38cce36c, type: 3}
+      propertyPath: m_margin.y
+      value: 12.188274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505963342823614472, guid: 8a3826b29567e6044a95e79d38cce36c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 13.8
       objectReference: {fileID: 0}
     - target: {fileID: 7753147258609537286, guid: 8a3826b29567e6044a95e79d38cce36c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

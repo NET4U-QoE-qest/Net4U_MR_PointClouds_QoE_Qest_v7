@@ -22,46 +22,46 @@ public class UIManager : MonoBehaviour
 
         if (loader == null)
         {
-            Debug.LogError("❌ PointCloudsLoader.Instance è null! Assicurati che esista in scena.");
+            Debug.LogError("[UIManager] PointCloudsLoader.Instance is null! Make sure it exists in the scene.");
             return;
         }
 
         if (loader.pcObjects.Count > 0)
         {
-            Debug.Log("[UIManager] Dati già presenti, popolamento immediato.");
+            Debug.Log("[UIManager] Data already loaded, populating dropdowns immediately.");
             PopulateDropdowns();
         }
         else
         {
-            Debug.Log("[UIManager] Nessun dato ancora caricato, mi sottoscrivo a OnLoaded.");
+            Debug.Log("[UIManager] No data loaded yet, subscribing to OnLoaded event.");
             PointCloudsLoader.OnLoaded += PopulateDropdowns;
         }
     }
 
     void PopulateDropdowns()
     {
-        Debug.Log("[UIManager] Popolamento dropdown avviato.");
+        Debug.Log("[UIManager] Populating dropdowns...");
         nameToData.Clear();
         List<string> names = new List<string>();
 
         foreach (var pc in PointCloudsLoader.Instance.pcObjects)
         {
-            Debug.Log($"[UIManager] Trovato oggetto: {(pc == null ? "null" : pc.ToString())}");
-            Debug.Log($"[UIManager] Trovato oggetto: {pc.GetType().Name} | Nome: '{pc.pcName}'");
+            Debug.Log($"[UIManager] Found object: {(pc == null ? "null" : pc.ToString())}");
+            Debug.Log($"[UIManager] Object type: {pc.GetType().Name} | Name: '{pc.pcName}'");
 
             if (!string.IsNullOrEmpty(pc.pcName))
             {
-                Debug.Log($"✅ Aggiungo point cloud '{pc.pcName}' al dropdown.");
+                Debug.Log($"[UIManager] Adding point cloud '{pc.pcName}' to dropdown.");
                 names.Add(pc.pcName);
                 nameToData[pc.pcName] = pc;
             }
             else
             {
-                Debug.LogWarning("⚠️ Point cloud con nome nullo o vuoto ignorato.");
+                Debug.LogWarning("[UIManager] Point cloud with null or empty name ignored.");
             }
         }
 
-        Debug.Log($"[UIManager] Nomi trovati: {string.Join(", ", names)}");
+        Debug.Log($"[UIManager] Names found: {string.Join(", ", names)}");
 
         pointCloudDropdown.ClearOptions();
         pointCloudDropdown.AddOptions(names);
@@ -81,7 +81,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[UIManager] Nessun nome valido trovato. Dropdown non popolato.");
+            Debug.LogWarning("[UIManager] No valid point cloud names found. Dropdown not populated.");
         }
     }
 
@@ -89,14 +89,14 @@ public class UIManager : MonoBehaviour
     {
         if (!nameToData.TryGetValue(pcName, out PointCloudObject data))
         {
-            Debug.LogError($"❌ Impossibile trovare PointCloudObject con nome '{pcName}'.");
+            Debug.LogError($"[UIManager] Could not find PointCloudObject with name '{pcName}'.");
             return;
         }
 
         GameObject prefab = Resources.Load<GameObject>("Prefabs/Preview_PointCloudPrefab");
         if (prefab == null)
         {
-            Debug.LogError("❌ Preview_PointCloudPrefab non trovato in Resources/Prefabs");
+            Debug.LogError("[UIManager] Preview_PointCloudPrefab not found in Resources/Prefabs.");
             return;
         }
 
@@ -126,21 +126,8 @@ public class UIManager : MonoBehaviour
 
     public void OnPlay()
     {
-        //string fixedName = "BlueSpin_UVG_vox10_25_0_250"; // Nome della cartella principale
-        //string fixedQuality = "1"; // Qualità fissa q1
-
-        //Debug.Log($"▶ PLAY fissa | {fixedName} - q{fixedQuality}");
-
-        //currentPC = PointCloudsLoader.Instance.Spawn(fixedName, fixedQuality);
-        
-        //if (currentPC != null)
-       // {
-       //     currentPC.SetIsMesh(meshToggle.isOn); // puoi disattivare anche questo se vuoi sempre point cloud
-        //    currentPC.SetAnimate(true);
-        //}
+        // You can enable custom logic here if needed in the future.
     }
-
-
 
     void OnReset()
     {
